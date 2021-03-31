@@ -124,3 +124,13 @@ h3 {
     margin-left: 20px;
 }
 
+/* Pricing Section */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+    
+}
