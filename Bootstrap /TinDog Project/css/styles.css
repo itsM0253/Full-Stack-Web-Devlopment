@@ -26,7 +26,13 @@ h3 {
  p {
      color: #8f8f8f;
  }
-
+ 
+ h2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+ }
 
 
 /* Navigation Bar */
@@ -84,4 +90,33 @@ h3 {
 
 .icon:hover {
     color: #ff4c68;
+}
+
+/* Testimonal Section */
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press Section  */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#press-logo {
+    width: 15%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
