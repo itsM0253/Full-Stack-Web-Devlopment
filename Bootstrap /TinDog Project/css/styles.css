@@ -96,7 +96,9 @@ h3 {
     color: #ff4c68;
 }
 
+
 /* Testimonal Section */
+
 #testimonials {
     text-align: center;
     background-color: #ef8172;
@@ -113,7 +115,9 @@ h3 {
     padding: 7% 15%;
 }
 
+
 /* Press Section  */
+
 #press {
     background-color: #ef8172;
     text-align: center;
@@ -128,7 +132,9 @@ h3 {
     margin-left: 20px;
 }
 
+
 /* Pricing Section */
+
 #pricing {
     padding: 100px;
     text-align: center;
@@ -138,3 +144,46 @@ h3 {
     padding: 3% 2%;
     
 }
+
+
+/* Call to Action  */
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading {
+    font-family: 'Montserrat-Black';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+/* Footer Section */
+
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.footer-icon {
+    margin: 20px 10px;
+}
+
+/* MEDIA FRIENDLY */
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
