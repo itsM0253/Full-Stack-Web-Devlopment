@@ -1,3 +1,4 @@
+// DETECTING BUTTON PRESS (IF YOU PRESS THAT BUTTON THE WEBSITE)
 // grabs the length of how many buttons with the class drum
 var size = document.querySelectorAll(".drum").length;
 
@@ -10,12 +11,17 @@ function handleClick() {
     var buttonInnerHTML = this.innerHTML; // get's the inner html inside of the button
 
     makeSound(buttonInnerHTML);
+
+    buttonAnimation(buttonInnerHTML);
   
 }
 
 
+// DETECTING KEYBOARD PRESS
 document.addEventListener("keydown", function(event) {
-    makeSound(event.key);
+    makeSound(event.key); // Get the keyboard button that was pressed when a key event occured
+    buttonAnimation(event.key);
+    
 });
 
 
@@ -63,4 +69,14 @@ function makeSound(key) {
             break;
     }
     
+}
+
+function buttonAnimation(currentKey) {
+
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed")
+    },100);
 }
