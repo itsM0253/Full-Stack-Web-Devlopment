@@ -9,7 +9,19 @@ for(var i = 0; i < size; i++) {
 function handleClick() {
     var buttonInnerHTML = this.innerHTML; // get's the inner html inside of the button
 
-    switch (buttonInnerHTML) {
+    makeSound(buttonInnerHTML);
+  
+}
+
+
+document.addEventListener("keydown", function(event) {
+    makeSound(event.key);
+});
+
+
+function makeSound(key) {
+   
+    switch (key) {
         case "w":
             var tom1 = new Audio('./sounds/tom-1.mp3');
             tom1.play();
@@ -51,6 +63,4 @@ function handleClick() {
             break;
     }
     
-  
 }
-
